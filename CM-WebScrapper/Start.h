@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#define nURLNews        @"http://doradosfc.com.mx/noticias-del-club.html?page=1"
 
-@interface Start : UIViewController
+//Debug
+#define nDebugEnable        1
+#define print(x)            if(nDebugEnable){(x);}
 
+@interface Start : UIViewController <UIWebViewDelegate>
 
 @end
 
